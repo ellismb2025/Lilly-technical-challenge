@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lilly Medical</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="disclaimer" id="disclaimer">
         Disclaimer: All medicine names and prices used in this application are fictional and do not represent any real medicine(s).
     </div>
+    
     <header>
         <h1>Medicine Tracker</h1>
     </header>
     
     <main>
+        <section class="create-med-section">
+            <h2>Add New Medicine</h2>
+            <form id="create-form">
+                <label for="med-name">Name:</label>
+                <input type="text" id="med-name" name="name" required>
+                
+                <label for="med-price">Price:</label>
+                <input type="number" id="med-price" name="price" step="0.01" required>
+                
+                <button type="submit">Add Medicine</button>
+            </form>
+            <hr>
+        </section>
+
+        <h2>Medicine List</h2>
         <ul id="medicines"></ul>
     </main>
 
